@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="app" uuid="6f46035a-ad7d-49dc-b998-012a8fbe9cc3">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:E:\myTest_flask\app.db</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>
