@@ -9,6 +9,7 @@ if __name__ == '__main__':
     token = t.decode('ascii')
     print('push v7')
     print('push v8')
+    print('push v9')
     print(token,'添加改变----')
     print('token--+-->', token,'<--+--')
     app.run()
