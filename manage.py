@@ -7,6 +7,7 @@ if __name__ == '__main__':
     s = Serializer(SECRET_KEY, expires_in=604800)
     t = s.dumps({'user_id': user_id})
     token = t.decode('ascii')
+    print('jenkins 改变')
     print(token,'添加改变----')
     print('token--+-->', token,'<--+--')
     app.run()
