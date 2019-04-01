@@ -10,6 +10,7 @@ if __name__ == '__main__':
     print('push v7')
     print('push v8')
     print('push v9')
+    print('push v10')
     print(token,'添加改变----')
     print('token--+-->', token,'<--+--')
     app.run()
