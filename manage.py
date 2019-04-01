@@ -8,6 +8,5 @@ if __name__ == '__main__':
     t = s.dumps({'user_id': user_id})
     token = t.decode('ascii')
     print(token,'添加改变----')
-    print(token,'添加改变----')
     print('token--+-->', token,'<--+--')
     app.run()
