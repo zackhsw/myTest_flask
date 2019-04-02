@@ -30,7 +30,6 @@ tasks = [{'aainfo': '测试数据 jack数据？'}]
 @app.route('/test')
 def hello_world():
     a_var = 'new _world'
-    a_var = 'new _world'
     return 'Hello Jack,welcome {}!'.format(a_var)
 
 
