@@ -1,5 +1,6 @@
 from app import app
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer, SignatureExpired, BadSignature
+
 if __name__ == '__main__':
     user_id = 38
     SECRET_KEY = 'hard to get string'
@@ -12,6 +13,6 @@ if __name__ == '__main__':
     print('push v9')
     print('push v17')
     print('push v18')
-    print(token,'添加改变----')
-    print('token--+-->', token,'<--+--')
-    app.run()
+    print(token, '添加改变----')
+    print('token--+-->', token, '<--+--')
+    app.run(host='0.0.0.0', port=5000)
