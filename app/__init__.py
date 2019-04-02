@@ -24,7 +24,12 @@ login.login_view = 'login'
 # api.add_resource(HelloWorld, '/')
 
 # 简单restful实现
-tasks = [{'aainfo':'测试数据 jack数据？'}]
+tasks = [{'aainfo': '测试数据 jack数据？'}]
+
+
+@app.route('/test')
+def hello_world():
+    return 'Hello World!'
 
 
 @app.route('/add_task/', methods=['POST'])
