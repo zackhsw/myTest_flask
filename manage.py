@@ -11,6 +11,7 @@ if __name__ == '__main__':
     print('push v8')
     print('push v9')
     print('push v17')
+    print('push v18')
     print(token,'添加改变----')
     print('token--+-->', token,'<--+--')
     app.run()
