@@ -29,7 +29,7 @@ tasks = [{'aainfo': '测试数据 jack数据？'}]
 
 @app.route('/test')
 def hello_world():
-    a_var = 'new start----end two'
+    a_var = 'new start----end two shell 自动构建'
     return 'Hello Jack,welcome {}!'.format(a_var)
 
 
