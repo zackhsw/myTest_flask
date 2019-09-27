@@ -6,7 +6,7 @@
 # Future , 可看做是task的返回容器，是异步编程的核心，
 
 import time
-from concurrent.futures import Future,ThreadPoolExecutor, as_completed, wait, FIRST_COMPLETED
+from concurrent.futures import Future, ThreadPoolExecutor, as_completed, wait, FIRST_COMPLETED
 
 
 def get_html(times):
@@ -14,14 +14,15 @@ def get_html(times):
     print("get page {} success".format(times))
     return times
 
+
 executor = ThreadPoolExecutor(max_workers=2)
 # 通过submit函数提交执行的函数到线程池中，submit是立即返回
 # task1 = executor.submit(get_html, (3))
 # task2 = executor.submit(get_html, (2))
 
 # 要获取已经成功的task的返回值
-urls = [1,8,4]
-all_tasks = [executor.submit(get_html,(url)) for url in urls]
+urls = [1, 8, 4]
+all_tasks = [executor.submit(get_html, (url)) for url in urls]
 wait(all_tasks, return_when=FIRST_COMPLETED)  # 阻塞主线程，等待满足的设定的条件，FIRST_COMPLETED这个是第一任务完成时执行
 print("main")
 for future in as_completed(all_tasks):  # as_completed 判断有完成的任务就返回
@@ -37,4 +38,3 @@ for future in as_completed(all_tasks):  # as_completed 判断有完成的任务�
 # time.sleep(4)
 # print(task1.done())
 # print(task1.result()) # result方法可以获取task的执行结果
-
