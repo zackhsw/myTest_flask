@@ -14,7 +14,8 @@ import aiomysql
 
 from pyquery import PyQuery
 
-start_url = "http://www.jobbole.com/"
+start_url = "https://juejin.im/"
+# start_url = "http://www.jobbole.com/"
 waiting_urls = []
 seen_urls = set()
 stopping = False
@@ -79,7 +80,7 @@ async def consumer(pool):
 
 
 async def main(loop):
-    pool = await aiomysql.create_pool(host='127.0.0.1', port=3306, user='root', password='root123', db='aiohttp_test',
+    pool = await aiomysql.create_pool(host='127.0.0.1', port=3306, user='root', password='passwd', db='aiohttp_test',
                                       loop=loop,
                                       charset='utf8', autocommit=True)
 
